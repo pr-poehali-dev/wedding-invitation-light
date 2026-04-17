@@ -2,11 +2,7 @@ import { useEffect, useState } from "react";
 
 const links = [
   { href: "#home", label: "Главная" },
-  { href: "#story", label: "История" },
-  { href: "#details", label: "Детали" },
-  { href: "#gallery", label: "Галерея" },
-  { href: "#rsvp", label: "RSVP" },
-  { href: "#contacts", label: "Контакты" },
+  { href: "#rsvp", label: "Подтверждение" },
 ];
 
 export default function Navbar() {
