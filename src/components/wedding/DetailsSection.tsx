@@ -5,8 +5,8 @@ const details = [
   {
     icon: "Calendar",
     label: "Дата",
-    value: "14 июня 2025",
-    sub: "Суббота",
+    value: "21 августа 2026",
+    sub: "Пятница",
   },
   {
     icon: "Clock",

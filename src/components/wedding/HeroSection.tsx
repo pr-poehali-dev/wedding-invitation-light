@@ -67,7 +67,7 @@ export default function HeroSection() {
           style={{ animationDelay: "0.8s", opacity: 0 }}
         >
           <span className="text-gold-300 tracking-[0.25em] text-sm font-montserrat uppercase">
-            14 Июня 2025
+            21 Августа 2026
           </span>
         </div>
 
