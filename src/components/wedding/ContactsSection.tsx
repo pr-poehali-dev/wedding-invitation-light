@@ -4,21 +4,21 @@ import Icon from "@/components/ui/icon";
 const contacts = [
   {
     icon: "Phone",
-    label: "Анна (невеста)",
+    label: "Ксения (невеста)",
     value: "+7 (900) 123-45-67",
     href: "tel:+79001234567",
   },
   {
     icon: "Phone",
-    label: "Михаил (жених)",
+    label: "Максим (жених)",
     value: "+7 (900) 765-43-21",
     href: "tel:+79007654321",
   },
   {
     icon: "Mail",
     label: "Электронная почта",
-    value: "anna.mikhail@wedding.ru",
-    href: "mailto:anna.mikhail@wedding.ru",
+    value: "maksim.kseniya@wedding.ru",
+    href: "mailto:maksim.kseniya@wedding.ru",
   },
 ];
 
@@ -79,7 +79,7 @@ export default function ContactsSection() {
           <p className="font-cormorant text-3xl text-warm-dark italic">
             «С нетерпением ждём встречи с вами»
           </p>
-          <p className="text-gold-600 font-cormorant text-xl mt-3">Анна & Михаил</p>
+          <p className="text-gold-600 font-cormorant text-xl mt-3">Максим & Ксения</p>
           <div className="flex justify-center gap-6 mt-8">
             <a href="#" className="text-gold-500 hover:text-gold-700 transition-colors">
               <Icon name="Instagram" size={20} />

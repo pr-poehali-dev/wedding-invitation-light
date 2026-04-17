@@ -27,7 +27,7 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#home" className={`font-cormorant text-xl italic transition-colors duration-300 ${scrolled ? "text-warm-dark" : "text-white"}`}>
-          A & M
+          M & K
         </a>
 
         <ul className="hidden md:flex items-center gap-8">

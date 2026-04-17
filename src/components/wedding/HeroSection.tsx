@@ -57,9 +57,9 @@ export default function HeroSection() {
           className="font-cormorant text-white text-7xl md:text-9xl font-light leading-none mb-4 animate-fade-up"
           style={{ animationDelay: "0.4s", opacity: 0 }}
         >
-          Анна
+          Максим
           <span className="block text-gold-300 italic text-5xl md:text-6xl my-3">&amp;</span>
-          Михаил
+          Ксения
         </h1>
 
         <div
