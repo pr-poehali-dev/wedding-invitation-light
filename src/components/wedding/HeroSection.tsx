@@ -75,7 +75,7 @@ export default function HeroSection() {
           className="text-white/80 font-cormorant text-xl italic animate-fade-in"
           style={{ animationDelay: "1s", opacity: 0 }}
         >
-          «Любовь никогда не перестаёт»
+          «Любовь — это когда ты в ком-то находишь себя»
         </p>
 
         <a
