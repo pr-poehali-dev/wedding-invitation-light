@@ -7,6 +7,7 @@ export default {
 		"./components/**/*.{ts,tsx}",
 		"./app/**/*.{ts,tsx}",
 		"./src/**/*.{ts,tsx}",
+			"./1776451872713711433.html"
 	],
 	prefix: "",
 	theme: {
@@ -17,8 +18,24 @@ export default {
 				'2xl': '1400px'
 			}
 		},
+		fontFamily: {
+			cormorant: ['Cormorant Garamond', 'serif'],
+			montserrat: ['Montserrat', 'sans-serif'],
+		},
 		extend: {
 			colors: {
+				gold: {
+					50: '#fefdf5',
+					100: '#fdf8e1',
+					200: '#faefc0',
+					300: '#f5e08a',
+					400: '#eecb4f',
+					500: '#d4a843',
+					600: '#b8891e',
+					700: '#8f6a16',
+					800: '#6b4f13',
+					900: '#4a3610',
+				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
@@ -70,25 +87,38 @@ export default {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' }
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
-					},
-					to: {
-						height: '0'
-					}
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' }
+				},
+				'fade-up': {
+					from: { opacity: '0', transform: 'translateY(30px)' },
+					to: { opacity: '1', transform: 'translateY(0)' }
+				},
+				'fade-in': {
+					from: { opacity: '0' },
+					to: { opacity: '1' }
+				},
+				'scale-in': {
+					from: { opacity: '0', transform: 'scale(0.95)' },
+					to: { opacity: '1', transform: 'scale(1)' }
+				},
+				'petal-fall': {
+					'0%': { transform: 'translateY(-20px) rotate(0deg)', opacity: '0' },
+					'10%': { opacity: '1' },
+					'100%': { transform: 'translateY(100vh) rotate(360deg)', opacity: '0' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-up': 'fade-up 0.8s ease-out forwards',
+				'fade-in': 'fade-in 1.2s ease-out forwards',
+				'scale-in': 'scale-in 0.6s ease-out forwards',
+				'petal-fall': 'petal-fall 6s linear infinite',
 			}
 		}
 	},

@@ -4,33 +4,40 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 40 30% 97%;
+    --foreground: 30 20% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 40 25% 95%;
+    --card-foreground: 30 20% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 40 25% 95%;
+    --popover-foreground: 30 20% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 38 65% 48%;
+    --primary-foreground: 40 30% 97%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 40 20% 90%;
+    --secondary-foreground: 30 20% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 40 20% 92%;
+    --muted-foreground: 30 10% 50%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 38 65% 48%;
+    --accent-foreground: 40 30% 97%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 38 30% 82%;
+    --input: 38 30% 82%;
+    --ring: 38 65% 48%;
+
+    --gold: #c9a84c;
+    --gold-light: #e8d5a3;
+    --gold-dark: #8f6a16;
+    --cream: #faf6ee;
+    --ivory: #f5ede0;
+    --warm-dark: #2c1f0e;
 
     --radius: 0.5rem;
 
@@ -97,5 +104,61 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+@layer utilities {
+  .gold-text {
+    color: var(--gold);
+  }
+  .gold-border {
+    border-color: var(--gold);
+  }
+  .gold-bg {
+    background-color: var(--gold);
+  }
+  .cream-bg {
+    background-color: var(--cream);
+  }
+  .ivory-bg {
+    background-color: var(--ivory);
+  }
+
+  .ornament-line {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .ornament-line::before,
+  .ornament-line::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      transparent,
+      var(--gold),
+      transparent
+    );
+  }
+
+  .section-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition:
+      opacity 0.8s ease-out,
+      transform 0.8s ease-out;
+  }
+  .section-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .gold-gradient {
+    background: linear-gradient(135deg, #c9a84c 0%, #e8d5a3 50%, #c9a84c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }
